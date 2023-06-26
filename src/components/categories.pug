@@ -1,0 +1,23 @@
+mixin categories()
+    .categories 
+        .categories__body.container 
+            .categories__top 
+                h2.categories__title Categories
+                .categories__buttons 
+                    button(type="button").categories__button All
+                    button(type="button").categories__button Fiction
+                    button(type="button").categories__button NONFICTION
+                    button(type="button").categories__button new books
+            .categories__content 
+                .categories__item 
+                    .categories__row 
+                        p.categories__date 23. June 2023
+                        button(type="button").categories__btn BUY
+                    .categories__img 
+                        img(src="@img/cat-1.png", alt="" draggable="false")
+                    .categories__info 
+                        p.categories__subtitle The Bigness of the World
+                        p.categories__desc In Lori Ostlund’s debut collection people seeking escape from situations at home venture out into a world that they find is just as complicated and troubled as the one they left behind.
+                    .categories__txts 
+                        p.categories__p #[span Book by] James Bridle
+                        p.categories__p #[span Originally published:] 2022

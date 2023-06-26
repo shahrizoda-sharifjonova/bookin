@@ -1,0 +1,29 @@
+.categories{
+    padding-bottom: 96px;
+    border-bottom: 1px solid #000;
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 67px;
+    }
+    &__title{
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    &__buttons{
+        display: flex;
+        align-items: stretch;
+    }
+    &__button{
+        font-size: 12px;
+        text-transform: uppercase;
+        padding: 8px 12px;
+        border-radius: 100px;
+        border: 1px solid #000;
+        &:not(:last-of-type){
+            margin-right: 12px;
+        }
+    }
+}
