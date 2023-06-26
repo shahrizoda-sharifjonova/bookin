@@ -1,4 +1,29 @@
 mixin header()
     header.header 
-        .header__nav.container 
-            p header
+        .header__nav.container  
+            .header__body
+                a(href="index.html").logo 
+                    img(src="@img/logo.svg", alt="" draggable="false") 
+                .menu 
+                    .menu-btn 
+                .header__content
+                    ul.header__list 
+                        li.header__li 
+                            a(href="#!").header__link Books
+                        li.header__li 
+                            a(href="#!").header__link Authors
+                        li.header__li 
+                            a(href="#!").header__link Best Sellers
+                    .header__medias 
+                        a(href="https://instagram.com").header__media 
+                            img(src="@img/instagram.svg", alt="" draggable="false").disable-md
+                            img(src="@img/instagram-white.svg", alt="" draggable="false").enable-md
+                        a(href="https://twitter.com").header__media 
+                            img(src="@img/twitter.svg", alt="" draggable="false").disable-md
+                            img(src="@img/twitter-white.svg", alt="" draggable="false").enable-md
+                        a(href="https://youtube.com").header__media 
+                            img(src="@img/youtube.svg", alt="" draggable="false").disable-md
+                            img(src="@img/youtube-white.svg", alt="" draggable="false").enable-md
+                        a(href="https://rss.com").header__media 
+                            img(src="@img/rss.svg", alt="" draggable="false").disable-md
+                            img(src="@img/rss-white.svg", alt="" draggable="false").enable-md

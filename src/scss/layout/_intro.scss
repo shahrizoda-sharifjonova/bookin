@@ -1,0 +1,14 @@
+.intro{
+    padding-top: 48px;
+    padding-bottom: 96px;
+    @include media(768){
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    &__img{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+}
