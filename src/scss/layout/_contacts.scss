@@ -1,0 +1,110 @@
+.contacts{
+    background: #000;
+    overflow-x: hidden;
+    color: #fff;
+    &__body{
+        padding-top: 128px;
+        padding-bottom: 128px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include media(1200){
+            flex-direction: column;
+        }
+        @include media(768){
+            padding-top: 90px;
+            padding-bottom: 90px;
+        }
+    }
+    &__p {
+        position: relative;   
+        white-space: nowrap;
+        animation: text 10s linear infinite;
+        padding: 20px;
+        span{
+            font-size: 22px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    }
+    &__title{
+        font-size: 80px;
+        font-weight: 600;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: #F9F9F9;
+        max-width: 790px;
+        width: 100%;
+        @include media(1200){
+            text-align: center;
+            max-width: 100%;
+            margin-bottom: 40px;
+        }
+        @include media(992){
+            font-size: 70px;
+        }
+        @include media(768){
+            font-size: 55px;
+        }
+        @include media(575){
+            font-size: 44px;
+        }
+    }
+    &__form{
+        display: flex;
+        align-items: stretch;
+        justify-content: flex-end;
+        @include media(575){
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+    &__input{
+        display: flex;
+        width: 309px;
+        height: 50px;
+        padding: 0px 15px;
+        align-items: center;
+        margin-right: 12px;
+        border: none;
+        font-size: 16px;
+        line-height: 180%;
+        color: rgba(0, 0, 0, 0.60);
+        &::placeholder{
+            color: rgba(0, 0, 0, 0.60);
+        }
+        @include media(768){
+            margin-right: 0;
+            margin-bottom: 12px;
+        }
+        @include media(575){
+            width: 100%;
+        }
+    }
+    &__btn{
+        background: #FFF;
+        padding: 4px 24px;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        transition: 300ms ease;
+        border: 1px solid transparent;
+        height: 50px;
+        &:hover{
+            border: 1px solid #fff;
+            color: #fff;
+            background: transparent;
+        }
+    }
+    @keyframes text {
+        0% {
+            left: 20px;
+        }
+        100% {
+            left: -100%;
+        }
+        50% {
+            left: -50%;
+        }
+    }
+}
