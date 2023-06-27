@@ -25,6 +25,12 @@
             font-size: 22px;
             font-weight: 600;
             text-transform: uppercase;
+            @include media(992){
+                font-size: 19px;
+            }
+            @include media(575){
+                font-size: 14px;
+            }
         }
     }
     &__title{
